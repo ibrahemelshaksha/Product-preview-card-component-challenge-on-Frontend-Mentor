@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [ solution URL here](https://github.com/ibrahemelshaksha/Product-preview-card-component-challenge-on-Frontend-Mentor.git)
-- Live Site URL: [ live site URL here]([https://your-live-site-url.com](https://ibrahemelshaksha.github.io/Product-preview-card-component-challenge-on-Frontend-Mentor/))
+- Solution URL: [solution URL here](https://github.com/ibrahemelshaksha/Product-preview-card-component-challenge-on-Frontend-Mentor.git)
+- Live Site URL: [live site URL here]([https://your-live-site-url.com](https://ibrahemelshaksha.github.io/Product-preview-card-component-challenge-on-Frontend-Mentor/))
 
 ## My process
 
