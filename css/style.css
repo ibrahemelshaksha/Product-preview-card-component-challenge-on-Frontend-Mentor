@@ -1,0 +1,144 @@
+/* بسم الله الرحمن الرحيم */
+/* start glopal rules */
+:root {
+    --color-Primary-100: hsl(158, 36%, 37%);
+    --color-Primary-200: hsl(30, 38%, 92%);
+
+    --color-Neutral-300: hsl(212, 21%, 14%);
+    --color-Neutral-400: hsl(228, 12%, 48%);
+    --color-Neutral-500: hsl(0, 0%, 100%);
+
+    --ff-Primary: 'Montserrat', sans-serif;
+    --ff-scoundry: 'Fraunces', serif;
+
+    --fw-montaserrat-500: font-weight:500;
+    --fw-montaserrat-700: font-weight:700;
+    --fw-Fraunces-700: font-weight:700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* end glopal rules */
+/* start styling  */
+body {
+    text-transform: capitalize;
+    background-color: var(--color-Primary-200);
+
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    width: 620px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-Neutral-500);
+    border-radius: 15px;
+    background-image: url(../image/image-product-desktop.jpg);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+
+.container .text {
+    padding: 20px 30px;
+    width: 50%;
+    margin: 0%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .text p:first-child,
+.container .text p:nth-child(3),
+.container .text .price del,
+.container .text button {
+    color: var(--color-Neutral-400);
+    font-family: var(--ff-Primary);
+    margin: 0%;
+    font-size: 14px;
+}
+
+.container .text p:first-child {
+    font-weight: var(--fw-montaserrat-500);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.container .text h1 {
+    margin: 0%;
+    font-family: var(--ff-scoundry);
+    font-weight: var(--fw-Fraunces-700);
+    font-size: 39px;
+}
+
+.container .text p:nth-child(3) {
+    font-weight: var(--fw-montaserrat-500);
+    line-height: 1.8;
+}
+
+.container .text .price {
+    color: var(--color-Primary-100);
+    font-family: var(--ff-scoundry);
+    font-size: 35px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0%;
+}
+
+.container .text .price del {
+    font-weight: var(--fw-Fraunces-700);
+}
+
+.container .text button {
+    background-color: var(--color-Primary-100);
+    color: var(--color-Neutral-500);
+    font-weight: var(--fw-montaserrat-700);
+    border-radius: 10px;
+    border: 0px;
+    width: 100%;
+    padding: 15px;
+}
+
+.container .text button:active {
+    background-color: #1a4031;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .container {
+        background-image: url(../image/image-product-mobile.jpg);
+        background-size: 100% 40%;
+        display: flex;
+        width: 310px;
+        height: 600px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .container .text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container .text h1 {
+        font-size: 30px;
+    }
+
+    .container .text p:first-child {
+        margin-bottom: -10px;
+    }
+
+    .container .text p:nth-child(3) {
+        line-height: 1.5;
+    }
+}
+
+/* end styling  */
